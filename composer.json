@@ -1,0 +1,10 @@
+{
+  "require": {
+    "doctrine/orm": "^2.6",
+    "ext-oauth": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-0": {"": "entities/"}
+  }
+}
