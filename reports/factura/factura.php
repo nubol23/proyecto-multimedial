@@ -110,4 +110,6 @@
         $pdf->Output();
         $pdf->Output('F','Reporte.pdf');
     }
+
+    factura(1);
 ?>
