@@ -176,6 +176,20 @@ function find_bills(string $client_name): array {
     return $bills;
 }
 
-//foreach (find_bills('rafael') as $bill){
+//foreach (find_bills('kevin') as $bill){
 //    echo nl2br($bill);
 //}
+
+function find_bills_ids(string $client_name): array {
+    global $entity_manager;
+    $client = find_client_by_name($client_name);
+
+    $bills = array();
+    if ($client != null){
+        foreach ($client->getBills() as $bill){
+            $bills[] = $bill->getId()."\n";
+        }
+    }
+
+    return $bills;
+}

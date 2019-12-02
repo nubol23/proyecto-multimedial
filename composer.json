@@ -1,7 +1,6 @@
 {
   "require": {
     "doctrine/orm": "^2.6",
-    "ext-oauth": "*",
     "ext-json": "*"
   },
   "autoload": {
