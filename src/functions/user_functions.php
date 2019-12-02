@@ -29,7 +29,7 @@ function register(string $username, string $password, string $position){
     $entity_manager->flush();
 }
 
-register('admin', 'admin', 'admin');
+//register('admin', 'admin', 'admin');
 
 function list_users(){
     global $entity_manager;
