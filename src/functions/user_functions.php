@@ -2,6 +2,7 @@
 require_once '../../connection_settings.php';
 
 require '../../entities/Position.php';
+require '../../entities/User.php';
 
 use entities\Position;
 use entities\User;
@@ -28,7 +29,7 @@ function register(string $username, string $password, string $position){
     $entity_manager->flush();
 }
 
-//register('admin', 'admin', 'admin');
+register('admin', 'admin', 'admin');
 
 function list_users(){
     global $entity_manager;
