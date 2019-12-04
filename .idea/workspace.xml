@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17e5eb4f-4ea5-4202-ad7d-186d75e4929e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1f58063d-8ecc-4e37-87bc-187952467547.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1f58063d-8ecc-4e37-87bc-187952467547.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pharmacy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pharmacy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/factura/Reporte.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/reports/factura/Reporte.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/factura/factura.php" beforeDir="false" afterPath="$PROJECT_DIR$/reports/factura/factura.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/user_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/functions/user_functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/inventario/Reporte.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/reports/inventario/Reporte.pdf" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +77,11 @@
   </component>
   <component name="ProjectId" id="1U4SfFV3TWjLQPv8uyiJNKYaxTA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -95,36 +102,16 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b70cea9b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@b70cea9b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@197795f6" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -143,6 +130,7 @@
       <workItem from="1575090129668" duration="257000" />
       <workItem from="1575292059176" duration="3111000" />
       <workItem from="1575304598587" duration="272000" />
+      <workItem from="1575428715043" duration="898000" />
     </task>
     <servers />
   </component>
@@ -161,5 +149,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1575428977103">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1575428977103" />
   </component>
 </project>

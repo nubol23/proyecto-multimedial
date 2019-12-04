@@ -79,6 +79,7 @@
         $pdf->Setfont('Arial','',8);
 
         $cant = 0;
+        $total = 0;
 
         foreach ($sales as $i => $value) {
             $pdf->Cell(10, 4, $value['units'], 0, 0,'L');
@@ -86,6 +87,7 @@
             $pdf->Cell(16, 4, $value['price'], 0, 0,'L');
             $pdf->Cell(16, 4, $value['price'] * $value['units'], 0, 1,'L');
             $cant++;
+            $total = $total + $value['price'] * $value['units'];
         }
         
 
@@ -96,9 +98,9 @@
         $pdf->Cell(20, 4,"Total", 0, 0,'L');
         $pdf->Cell(2, 4,":", 0, 0,'L');
         $pdf->Setfont('Arial', '', 8);
-        $pdf->Cell(20, 4,"12.5", 0, 1,'R');
+        $pdf->Cell(20, 4, $total, 0, 1,'R');
 
-        $qrcode = new QRcode('your message here', 'H');
+        $qrcode = new QRcode($info['name'] . " " . $info['nit'] . " Total: " . $total, 'H');
         $qrcode->displayFPDF($pdf, 28, 95 + $cant * 4, 25, array(255, 255, 255), array(0, 0, 0));
 
         $pdf->Cell(20, 35 + $cant * 3, '', 0, 1, 'L');
