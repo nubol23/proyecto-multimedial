@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17e5eb4f-4ea5-4202-ad7d-186d75e4929e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1f58063d-8ecc-4e37-87bc-187952467547.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1f58063d-8ecc-4e37-87bc-187952467547.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pharmacy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pharmacy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/factura/Reporte.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/reports/factura/Reporte.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/factura/factura.php" beforeDir="false" afterPath="$PROJECT_DIR$/reports/factura/factura.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/inventario/Reporte.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/reports/inventario/Reporte.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,23 +26,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="pharmacy@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="pharmacy@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="pharmacy@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="pharmacy: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="Git.Settings">
@@ -130,7 +109,7 @@
       <workItem from="1575090129668" duration="257000" />
       <workItem from="1575292059176" duration="3111000" />
       <workItem from="1575304598587" duration="272000" />
-      <workItem from="1575428715043" duration="898000" />
+      <workItem from="1575428715043" duration="5152000" />
     </task>
     <servers />
   </component>
@@ -151,6 +130,18 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575429808494">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1575429808494" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1575429823986">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1366.728@0.0.1366.728" timestamp="1575429823986" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1575429818793">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1575429818793" />
     <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1575428977103">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
