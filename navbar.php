@@ -10,11 +10,7 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-<<<<<<< HEAD
         <a class="nav-link" href="bill/bill.php">Facturar</a>
-=======
-        <a class="nav-link" href="bill.php">Facturar</a>
->>>>>>> af6785a7feb04680da07fb9acaf64ea0cacf0ef4
       </li>
       <li class="nav-item">
         <a class="nav-link" href="addMedicine.php">Agregar medicamento</a>
@@ -23,17 +19,10 @@
         <a class="nav-link" href="listBills.php">Explorar registros</a>
       </li>
       <li class="nav-item">
-<<<<<<< HEAD
         <a class="nav-link" href="register.php">Crear usuario</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0" action="logout.php">
-=======
-        <a class="nav-link" href="createUser.php">Crear usuario</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0" action="index.php">
->>>>>>> af6785a7feb04680da07fb9acaf64ea0cacf0ef4
       <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Salir</button>
     </form>
   </div>
