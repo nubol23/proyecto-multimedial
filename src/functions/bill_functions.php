@@ -65,10 +65,7 @@ function register_bill(string $client_name,
             $sale = (new Sale())
                 ->setUnits($buyed_medicine_quantity)
                 ->setSalePrice($buyed_medicine_quantity*$medicine->getPrice())
-                ->setBill($bill)
-                ->setMedicine($medicine)
-                ->setUser(get_user($user_token))
-                ->setAgency(add_agency($agency_location));
+                ->setBill($bill);
 
             $bill->addSale($sale);
         }
@@ -84,15 +81,15 @@ function register_bill(string $client_name,
 
 // To use this function, you must use find_client($nit) before, in order to get the client information
 // or to create a new client.
-//echo register_bill(
-//    'rafael',
-//    '8944417',
-//    array(
-//        array('name' => 'Alercet D', 'quantity' => 1),
-//        array('name' => 'Omeprazol', 'quantity' => 5)
-//    ),
-//    '4f7c55ed262b10c5f3b556136d50143af1d51f66',
-//    'Downtown');
+echo register_bill(
+    'rafael',
+    '8944417',
+    array(
+        array('name' => 'Alercet D', 'quantity' => 1),
+        array('name' => 'Omeprazol', 'quantity' => 5)
+    ),
+    '4f7c55ed262b10c5f3b556136d50143af1d51f66',
+    'Downtown');
 
 function get_bill($id): Bill {
     global $entity_manager;
@@ -176,20 +173,6 @@ function find_bills(string $client_name): array {
     return $bills;
 }
 
-//foreach (find_bills('kevin') as $bill){
+//foreach (find_bills('rafael') as $bill){
 //    echo nl2br($bill);
 //}
-
-function find_bills_ids(string $client_name): array {
-    global $entity_manager;
-    $client = find_client_by_name($client_name);
-
-    $bills = array();
-    if ($client != null){
-        foreach ($client->getBills() as $bill){
-            $bills[] = $bill->getId()."\n";
-        }
-    }
-
-    return $bills;
-}

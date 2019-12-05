@@ -22,7 +22,7 @@ function add_manufacturer(string $name): bool {
     return false;
 }
 
-// add_manufacturer('Biofar');
+//add_manufacturer('Biofar');
 
 function add_medicine(string $name, float $price, int $quantity_in_box, int $stock, string $manufacturer_name): bool {
     global $entity_manager;
@@ -52,7 +52,7 @@ function add_medicine(string $name, float $price, int $quantity_in_box, int $sto
     return false;
 }
 
-// add_medicine('aspirina',1.5,5,10,'Biofar');
+//add_medicine('aspirina',1.5,5,10,'Biofar');
 
 function find_inexact_medicines(string $name): ArrayCollection{
     /**
@@ -100,30 +100,6 @@ function get_remaining_medicine_quantity(string $medicine_name): ?int{
 }
 
 //echo get_remaining_medicine_quantity('alercet d');
-
-function get_medicine_price(string $medicine_name): ?float{
-    global $entity_manager;
-    $medicines = $entity_manager->getRepository('entities\Medicine')->findBy(array(
-        'name' => $medicine_name
-    ));
-
-    if (sizeof($medicines) == 1)
-        return $medicines[0]->getPrice();
-
-    return null;
-}
-
-function get_medicine_id(string $medicine_name): ?float{
-    global $entity_manager;
-    $medicines = $entity_manager->getRepository('entities\Medicine')->findBy(array(
-        'name' => $medicine_name
-    ));
-
-    if (sizeof($medicines) == 1)
-        return $medicines[0]->getId();
-
-    return null;
-}
 
 function get_all_medicines_and_manufacturers(): array{
     /**
@@ -181,6 +157,30 @@ function refill_medicine(string $medicine_name,
         return false;
     }
 
+}
+
+function get_medicine_price(string $medicine_name): ?float{
+    global $entity_manager;
+    $medicines = $entity_manager->getRepository('entities\Medicine')->findBy(array(
+        'name' => $medicine_name
+    ));
+
+    if (sizeof($medicines) == 1)
+        return $medicines[0]->getPrice();
+
+    return null;
+}
+
+function get_medicine_id(string $medicine_name): ?float{
+    global $entity_manager;
+    $medicines = $entity_manager->getRepository('entities\Medicine')->findBy(array(
+        'name' => $medicine_name
+    ));
+
+    if (sizeof($medicines) == 1)
+        return $medicines[0]->getId();
+
+    return null;
 }
 
 //echo refill_medicine('Alercet D', 7, 'Bagó', 12.8, 10);

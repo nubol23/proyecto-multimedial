@@ -1,8 +1,7 @@
 <?php
 require_once '../../connection_settings.php';
 
-require_once '../../entities/Position.php';
-require_once '../../entities/User.php';
+require '../../entities/Position.php';
 
 use entities\Position;
 use entities\User;

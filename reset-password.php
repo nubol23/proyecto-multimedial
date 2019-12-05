@@ -21,7 +21,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $new_password = trim($_POST["new_password"]);
     }
 
-    // Validate confirm password
     if(empty(trim($_POST["confirm_password"]))){
         $confirm_password_err = "Confirma la contraseña.";
     } else{
@@ -76,11 +75,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
   <?php
-    if (htmlspecialchars($_SESSION["position_id"] == 1)) {
-        include("navbar.php");
-      }else{
-        include("navbarEmployee.php");
-      }
+    include("navbar.php");
   ?>
     <div class="container col-sm-9 col-md-7 col-lg-5 mx-auto floatingb">
         <h2>Reset Password</h2>

@@ -7,6 +7,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: index.php");
     exit;
 }
+setcookie('count', 1, time() - 1);
 ?>
 
 <!DOCTYPE html>
