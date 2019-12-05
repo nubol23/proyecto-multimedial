@@ -1,4 +1,5 @@
 <?php
+echo $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF'];
 // Inicioamos session
 session_start();
 
@@ -125,6 +126,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </div>
                 <!--<p>Para añadir usuarios de pruebita <a href="register.php">Click aqui</a>.</p>-->
               </form>
+              <a href='register.php'>Registrar</a>
             </div>
           </div>
         </div>
