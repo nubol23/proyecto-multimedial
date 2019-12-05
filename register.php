@@ -62,7 +62,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 
     $options = ($_POST['options']);
-
     // Check input errors before inserting in database
     if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
 

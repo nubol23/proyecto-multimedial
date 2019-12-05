@@ -32,11 +32,6 @@ Todas las funciones de interaccion con la base de datos se encuentran en el dire
 +-- entities
 |   +-- Agency.php
 |   +-- Bill.php
-+-- reports
-|   +-- factura
-|   +-- inventario
-|   +-- proveedor
-|   +-- user
 +-- src
 |   +-- functions
 |   |   +-- bill_functions.php
@@ -49,4 +44,3 @@ Todas las funciones de interaccion con la base de datos se encuentran en el dire
 |   .
 |   .
 ```
-
