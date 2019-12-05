@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 // Inicioamos session
+=======
+// Inicializamos sesion
+>>>>>>> af6785a7feb04680da07fb9acaf64ea0cacf0ef4
 session_start();
 
 // Revisamos si el usuario esta loggeado, si es asi nos vamos al welcome.php psdt: talvez el welcome no es necesario
@@ -35,7 +39,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validamos las credenciales
     if(empty($username_err) && empty($password_err)){
         // Preparamos un query
+<<<<<<< HEAD
         $sql = "SELECT id, position_id, username, password FROM user WHERE username = ?";
+=======
+        $sql = "SELECT id, username, password FROM users WHERE username = ?";
+>>>>>>> af6785a7feb04680da07fb9acaf64ea0cacf0ef4
 
         if($stmt = mysqli_prepare($link, $sql)){
             // Unimos la variables preparadas a la declaracion de variables
@@ -52,7 +60,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 // Revisamos si el usuario esta en ls db, si existe entonces pasamos con contraseña
                 if(mysqli_stmt_num_rows($stmt) == 1){
                     // Unimos las variables de los resultados
+<<<<<<< HEAD
                     mysqli_stmt_bind_result($stmt, $id, $position_id, $username, $hashed_password);
+=======
+                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
+>>>>>>> af6785a7feb04680da07fb9acaf64ea0cacf0ef4
                     if(mysqli_stmt_fetch($stmt)){
                         if(password_verify($password, $hashed_password)){
                             // Si la contraseña es correcta, llenamos la session
@@ -61,7 +73,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             // Salvamos los datos en las variables de la session
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
+<<<<<<< HEAD
                             $_SESSION["position_id"] = $position_id;
+=======
+>>>>>>> af6785a7feb04680da07fb9acaf64ea0cacf0ef4
                             $_SESSION["username"] = $username;
 
                             // Redirijimos a la pagina de welcome.php
@@ -97,7 +112,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Farmacias Multimedial</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/estilo.css">
+=======
+    <link rel="stylesheet" href="css/estilos.css">
+>>>>>>> af6785a7feb04680da07fb9acaf64ea0cacf0ef4
 </head>
 <body>
     <div class="container">
@@ -123,7 +142,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <div class="form-group">
                     <input type="submit" class="btn btn-lg btn-primary btn-block text-uppercase" value="Login">
                 </div>
+<<<<<<< HEAD
                 <!--<p>Para añadir usuarios de pruebita <a href="register.php">Click aqui</a>.</p>-->
+=======
+                <p>Para añadir usuarios de pruebita <a href="register.php">Click aqui</a>.</p>
+>>>>>>> af6785a7feb04680da07fb9acaf64ea0cacf0ef4
               </form>
             </div>
           </div>

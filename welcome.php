@@ -17,6 +17,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <title>Welcome</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
@@ -26,6 +27,13 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       }else{
         include("navbarEmployee.php");
       }
+=======
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <?php
+      include("navbar.php");
+>>>>>>> af6785a7feb04680da07fb9acaf64ea0cacf0ef4
     ?>
 
     <div class="card w-100 text-center floatingb">
