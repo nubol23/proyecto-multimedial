@@ -65,8 +65,9 @@ function register_bill(string $client_name,
             $sale = (new Sale())
                 ->setUnits($buyed_medicine_quantity)
                 ->setSalePrice($buyed_medicine_quantity*$medicine->getPrice())
-                ->setBill($bill);
-
+                ->setBill($bill)
+                ->setAgency($agency_location)
+                ->setUser($user_token);
             $bill->addSale($sale);
         }
     }
@@ -85,8 +86,8 @@ echo register_bill(
     'rafael',
     '8944417',
     array(
-        array('name' => 'Alercet D', 'quantity' => 1),
-        array('name' => 'Omeprazol', 'quantity' => 5)
+        array('name' => 'aspirina', 'quantity' => 1),
+        array('name' => 'codeina', 'quantity' => 5)
     ),
     '4f7c55ed262b10c5f3b556136d50143af1d51f66',
     'Downtown');
