@@ -4,7 +4,7 @@
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
-define('DB_NAME', 'dbejemplo');
+define('DB_NAME', 'pharmacy');
 
 /* Intentamos conectarnos a nuestra super base de datos en MySQL*/
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);

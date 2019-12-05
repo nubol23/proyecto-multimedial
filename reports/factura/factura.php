@@ -89,7 +89,6 @@
             $cant++;
             $total = $total + $value['price'] * $value['units'];
         }
-        
 
         $pdf->Cell(76, 2,"",'T',1,'C');    
         
