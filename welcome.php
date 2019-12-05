@@ -17,11 +17,15 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <title>Welcome</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <?php
-      include("navbar.php");
+      if (htmlspecialchars($_SESSION["position_id"] == 1)) {
+        include("navbar.php");
+      }else{
+        include("navbarEmployee.php");
+      }
     ?>
 
     <div class="card w-100 text-center floatingb">
