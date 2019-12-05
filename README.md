@@ -28,11 +28,6 @@ All the utilities needed for the project backend interaction are placed at the *
 +-- entities
 |   +-- Agency.php
 |   +-- Bill.php
-+-- reports
-|   +-- factura
-|   +-- inventario
-|   +-- proveedor
-|   +-- user
 +-- src
 |   +-- functions
 |   |   +-- bill_functions.php
@@ -45,11 +40,3 @@ All the utilities needed for the project backend interaction are placed at the *
 |   .
 |   .
 ```
-
-## Reports
-
-Inventario just call inventario.
-Factura just call factura($id), id as bill(id)
-Proveedor just call proveedor()
-User just call user($id), id as client(id), show bills of a user.
-
