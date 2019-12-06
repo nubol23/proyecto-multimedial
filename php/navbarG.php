@@ -16,7 +16,7 @@
         <a class="nav-link" href="addMedicine.php">Agregar medicamento</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="listBills.php">Explorar registros</a>
+        <a class="nav-link" href="refill.php">Reabastecer</a> 
       </li>
       <li class="nav-item">
         <a class="nav-link" href="../reports/inventario.php">Inventario</a>
