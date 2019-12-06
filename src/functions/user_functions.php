@@ -1,7 +1,8 @@
 <?php
-require_once '../../connection_settings.php';
+require_once 'connection_settings.php';
 
-require '../../entities/Position.php';
+require_once '../entities/Position.php';
+require_once '../entities/User.php';
 
 use entities\Position;
 use entities\User;
@@ -28,7 +29,7 @@ function register(string $username, string $password, string $position){
     $entity_manager->flush();
 }
 
-//register('admin', 'admin', 'admin');
+// register('admin', 'admin', 'admin');
 
 function list_users(){
     global $entity_manager;
@@ -112,3 +113,4 @@ function logout(string $token): bool {
 }
 
 //logout("8afbe3c1c5055970ff31b724eb784158fc33d8b6");
+?>

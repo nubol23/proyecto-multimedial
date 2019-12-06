@@ -15,9 +15,11 @@ $connection_parameters = [
     'dbname' => 'pharmacy',
     'user' => 'root',
     'password' => '',
-    'host' => '127.0.0.1',
+    'host' => 'localhost',
     'driver' => 'pdo_mysql'
 ];
 
 // Get the entity manager
 $entity_manager = Doctrine\ORM\EntityManager::create($connection_parameters, $configuration);
+
+?>

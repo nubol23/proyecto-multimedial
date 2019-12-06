@@ -4,8 +4,8 @@ use Doctrine\Common\Collections\ArrayCollection;
 use entities\Client;
 use entities\Origin;
 
-require_once '../../connection_settings.php';
-require_once '../../entities/Client.php';
+require_once 'connection_settings.php';
+require_once '../entities/Client.php';
 
 function add_origin($state): Origin{
     global $entity_manager;

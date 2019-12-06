@@ -1,28 +1,23 @@
 # proyecto-multimedial
 
-## Crear la base de datos
-* Nombre: pharmacy	
-* Codificacion: utf8_general_ci
+## Create Database
+* Database: pharmacy	
+* Encoding: utf8_general_ci
 
-## Instalacion usando composer
-Mover el proyecto a la raiz de la carpeta xampp/htdocs o ejecutar ```git clone https://github.com/nubol23/proyecto-multimedial.git```
-
+## Install composer
+Move to the project root folder and run from console
 ```composer install```
 
-## Generar getters y setters
-En caso de requerir una modificacion de la base de datos ejecutar ```php vendor/bin/doctrine orm:generate-entities .```
+## Generate getters and setters
+If you make some changes on the entities run ```php vendor/bin/doctrine orm:generate-entities .```
 
-## Actualizar la base de datos
-Ejecutar en Linux:
+## Make changes on the Database
+Run
 
 ```php vendor/bin/doctrine orm:schema-tool:update --force```
 
-Ejecutar en Windows:
-
-```php vendor/doctrine/orm/bin/doctrine orm:schema-tool:update --force```
-
-## Funciones
-Todas las funciones de interaccion con la base de datos se encuentran en el directorio functions, existen funciones de alta, baja y modificacion.
+## Functions
+All the utilities needed for the project backend interaction are placed at the **functions** folder.
 
 ```
 .
@@ -50,4 +45,11 @@ Todas las funciones de interaccion con la base de datos se encuentran en el dire
 |   .
 |   .
 ```
+
+## Reports
+
+Inventario just call inventario.
+Factura just call factura($id), id as bill(id)
+Proveedor just call proveedor()
+User just call user($id), id as client(id), show bills of a user.
 
