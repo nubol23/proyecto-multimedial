@@ -1,23 +1,20 @@
 # proyecto-multimedial
 
-## Create Database
-* Database: pharmacy	
-* Encoding: utf8_general_ci
+## Crear la base de datos
+* Base de datos: pharmacy	
+* Codificacion: utf8_general_ci
 
-## Install composer
-Move to the project root folder and run from console
+## Instalar composer
+Mover el proyecto a la carpeta htdocs y ejecutar desde consola
 ```composer install```
 
-## Generate getters and setters
-If you make some changes on the entities run ```php vendor/bin/doctrine orm:generate-entities .```
+## Para crear las tablas de la base de datos
+Ejecutar en consola.
 
-## Make changes on the Database
-Run
+```php vendor/doctrine/orm/bin/doctrine orm:schema-tool:update --force```
 
-```php vendor/bin/doctrine orm:schema-tool:update --force```
-
-## Functions
-All the utilities needed for the project backend interaction are placed at the **functions** folder.
+## Funciones
+Todas las funciones del backend se encuentran en a carpeta funciones
 
 ```
 .
@@ -49,7 +46,10 @@ All the utilities needed for the project backend interaction are placed at the *
 ## Reports
 
 Inventario just call inventario.
+
 Factura just call factura($id), id as bill(id)
+
 Proveedor just call proveedor()
+
 User just call user($id), id as client(id), show bills of a user.
 
