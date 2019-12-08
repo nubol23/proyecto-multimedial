@@ -13,6 +13,9 @@
         <a class="nav-link" href="bill.php">Facturar</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="list_bills.php">Ultima Factura a imprimir</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="../reports/inventario.php">Inventario</a>
       </li>
     </ul>

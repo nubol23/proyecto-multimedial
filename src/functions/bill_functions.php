@@ -29,7 +29,6 @@ function add_agency($location): Agency{
     return $agency;
 }
 
-
 function register_bill(string $client_name,
                        string $client_nit,
                        array $buyed_medicines_name_quantity,
@@ -93,6 +92,20 @@ function register_bill(string $client_name,
 //    ),
 //    '4f7c55ed262b10c5f3b556136d50143af1d51f66',
 //    'Downtown');
+
+function get_last_bill(): int {
+    global $entity_manager;
+    $bills_list = $entity_manager->getRepository('entities\Bill')->findAll();
+
+    $bill_id = -1;
+    if ($bills_list != null){
+        foreach ($bills_list as $bill){
+            $bill_id = $bill->getId();
+        }
+    }
+
+    return $bill_id;
+}
 
 function get_bill($id): Bill {
     global $entity_manager;
