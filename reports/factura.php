@@ -17,8 +17,8 @@
         $pdf=new FPDF('P','mm',array(80,200));
         $pdf->setLeftMargin(2);
         $pdf->AddPage();
-        //$pdf->Image("logo.png", 5, 5, 20, 20, 'PNG');
-        //$pdf->Image("watermark.png", 15, 50, 50, 50, 'PNG');
+        $pdf->Image("logo.png", 5, 5, 20, 20, 'PNG');
+        $pdf->Image("watermark.png", 15, 50, 50, 50, 'PNG');
          
         $pdf->SetFillColor(232,232,232);
         $pdf->Setfont('Arial','B',14);
